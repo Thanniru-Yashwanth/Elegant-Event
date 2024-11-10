@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner Sign-Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Wedding Planner Sign-Up</h1>
+        <p>Let us help you plan your dream wedding! Fill in the details below to get started.</p>
+
+        <form id="signupForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Your Full Name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+            <label for="weddingDate">Wedding Date</label>
+            <input type="date" id="weddingDate" name="weddingDate" required>
+
+            <label for="budget">Estimated Wedding Budget ($)</label>
+            <input type="number" id="budget" name="budget" required placeholder="Estimated Budget">
+
+            <label for="serviceType">What Services Do You Need?</label>
+            <select id="serviceType" name="serviceType">
+                <option value="fullPlanning">Full Planning</option>
+                <option value="dayOfCoordination">Day-of Coordination</option>
+                <option value="partialPlanning">Partial Planning</option>
+                <option value="consultation">Consultation</option>
+            </select>
+
+            <label for="message">Additional Information</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any additional details or requests?"></textarea>
+
+            <button type="submit">Sign Up Now</button>
+        </form>
+        <div id="successMessage" class="hidden">
+            <p>Thank you for signing up! We will reach out to you soon.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
